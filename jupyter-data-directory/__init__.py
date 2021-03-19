@@ -1,7 +1,7 @@
 import os, json, sys
 import tornado.web
 
-path = json.loads(open(os.path.join(sys.prefix, "etc", "jupyter", "jupyter-data-directory.json")).read())["path"]
+path = json.loads(open(os.path.join(sys.prefix, "etc", "jupyter", "jupyter-data-directory.json")).read())["path"].format(prefix=sys.prefix)
 
 def url_path_join(*pieces):
     """

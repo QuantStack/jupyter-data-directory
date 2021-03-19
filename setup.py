@@ -15,7 +15,8 @@ setup(
     data_files=[
         ('etc/jupyter/jupyter_notebook_config.d', ['etc/jupyter/jupyter_notebook_config.d/jupyter-data-directory.json']),
         ('etc/jupyter/jupyter_server_config.d', ['etc/jupyter/jupyter_server_config.d/jupyter-data-directory.json']),
-        ('etc/jupyter', ['etc/jupyter/jupyter-data-directory.json'])
+        ('etc/jupyter', ['etc/jupyter/jupyter-data-directory.json']),
+        ('share/jupyter/data-directory', ['share/jupyter/data-directory/example.md', 'share/jupyter/data-directory/jupyter-logo.png'])
     ],
     zip_safe=False,
     classifiers=[
